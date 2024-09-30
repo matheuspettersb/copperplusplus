@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "copperpp:block/copper_smelter"
+    }
+  }
+}
