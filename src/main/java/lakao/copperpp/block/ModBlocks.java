@@ -1,6 +1,7 @@
 package lakao.copperpp.block;
 
 import lakao.copperpp.CopperPlusPlus;
+import lakao.copperpp.block.custom.CopperSmelterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -17,7 +18,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     private static final Block COPPPER_SMELTER = registerBlock("copper_smelter",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+            new CopperSmelterBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -1,6 +1,7 @@
 package lakao.copperpp.item;
 
 import lakao.copperpp.CopperPlusPlus;
+import lakao.copperpp.item.custom.CopperHookItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -20,8 +21,11 @@ public class ModItems {
     public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe", new Item(new FabricItemSettings()));
     public static final Item COPPER_HELMET = registerItem("copper_helmet", new Item(new FabricItemSettings()));
 
+    public static final Item COPPER_HOOK = registerItem("copper_hook", new CopperHookItem(new FabricItemSettings().maxDamage(64)));
+
     public static void addItemsToToolGroup(FabricItemGroupEntries entries) {
         entries.add(COPPER_PICKAXE);
+        entries.add(COPPER_HOOK);
     }
 
     public static void addItemsToCombatGroup(FabricItemGroupEntries entries) {
